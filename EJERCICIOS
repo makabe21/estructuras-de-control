@@ -1,0 +1,53 @@
+#IF
+numero = int(input("Introduce un número entero: "))
+if numero % 2 == 0:
+    print("El número es par.")
+else:
+    print("El número es impar.")
+
+#for
+N = int(input("Introduce el valor de N: "))
+suma = 0
+for i in range(1, N + 1):
+    suma += i
+print("La suma de los primeros", N, "números enteros es:", suma)
+
+
+#while
+numero = int(input("Introduce un número: "))
+while numero <= 100:
+    print(numero)
+    numero *= 2
+print("El número final es mayor que 100.")
+
+
+#switch
+dia = int(input("Introduce un número del 1 al 7: "))
+match dia:
+    case 1:
+        print("Lunes")
+    case 2:
+        print("Martes")
+    case 3:
+        print("Miércoles")
+    case 4:
+        print("Jueves")
+    case 5:
+        print("Viernes")
+    case 6:
+        print("Sábado")
+    case 7:
+        print("Domingo")
+    case _:
+        print("Número inválido")
+
+#for con if
+texto = input("Introduce una cadena de texto: ")
+vocales = "aeiouAEIOU"
+contador = 0
+for letra in texto:
+    if letra in vocales:
+        contador += 1
+print("El número de vocales es:", contador)
+
+
